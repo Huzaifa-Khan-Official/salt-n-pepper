@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "hamaraFont";
+    src: url("./Merriweather-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+.navbar {
+    padding: 10px 80px;
+}
+
+.collapse {
+    margin-left: 40px;
+}
+
+.nav-item {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    border-color: grey;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.btnNavItem:hover {
+    border-color: transparent;
+}
+
+.nav-item button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: all .5s;
+}
+
+.nav-item button:hover {
+    background-color: gray;
+}
+
+#orderBtn {
+    border-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#orderBtn:hover {
+    background-color: red;
+}
+
+.carousel-indicators button {
+    background-color: white !important;
+    height: 4px !important;
+}
+
+.cardMainDiv {
+    background-color: black !important;
+    padding: 80px 120px;
+}
+
+.cardHeadingDiv h2 span {
+    font-family: "hamaraFont";
+    font-size: 60px;
+}
+
+.cardDiv {
+    padding: 20px 180px;
+}
+
+.imgDiv {
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.btnDiv button {
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.btnDiv button:hover {
+    background-color: gray;
+}
+
+
+@media (max-width: 991px) {
+    .collapse {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .cardDiv {
+        padding: 20px 50px;
+        gap: 20px;
+
+    }
+
+    .cardMainDiv {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    carousel-item img {
+        height: 400px;
+    }
+
+    .cardDiv {
+        padding: 20px 20px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar {
+        padding: 10px 20px;
+
+    }
+}
